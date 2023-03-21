@@ -1,0 +1,495 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>041 Mondperle tot, Bibliothek</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+	<style>
+		body, html {
+			height:100%;
+			font-family:'Open Sans', sans-serif;
+			line-height:1.5em;
+			background-color:#FAFAFA;
+			text-rendering:geometricPrecision;
+			margin:0;
+			padding:0;
+		}
+		#wrapper {
+			height:100%;
+			position:relative;
+		}
+		#navigation {
+			background-color:#F3F3F3;
+			display:inline-block;
+			border-right:1px solid #EAEAEA;
+			padding-top:10px;
+			padding-right:10px;
+			padding-left:0px;
+			position:relative;
+			float:left;
+			min-height:100%;
+			width: 300px;
+			font-size: 90%;
+			line-height:1.4em;
+		}
+		#content {
+			float:left;
+			display:inline-block;
+			position:absolute;
+			max-width:1000px;
+			padding-top:10px;
+			padding-right:25px;
+			padding-left:25px;
+			padding-bottom:25px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a:active {
+			text-decoration: underline;
+		}
+
+		#navigation li {
+			list-style-type:circle;
+		}
+		#navigation a {
+			color: #555;
+			font-weight: 500;
+		}
+
+		#content h2,h3,h4,h5,h6 {
+			color: #4E9A06;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		
+		#content h1 {
+		    text-decoration: underline;
+			color: #4E9A06;
+			margin-bottom: 10;
+			font-weight: normal;
+		}
+		
+		#content p {
+			margin-top: 0;
+		}
+		#content a {
+			color: #CE5C00;
+		}
+		#content strike {
+			color: grey;
+		}
+		#content u {
+			text-decoration: none;
+			background-color: yellow;
+		}
+		#content tt {
+			color: #2e3436;
+		}
+		#content pre {
+			color: #2e3436;
+			margin-left: 20px;
+		}
+
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+
+		p.footer {
+			padding-top: 45;
+			text-align: right;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./040_Verhoere_der_Ratsmitglieder.html'>Prev</a> ]
+
+	[ <a href='../exordia.html'>Index</a> ]
+
+	[ <a href='./042_Problems_of_the_Realm.html'>Next</a> ]
+</div>
+
+<hr />
+
+<div id="wrapper">
+
+<div id="navigation">
+<ul>
+<li><a href="../Feuerklan-Sideadventure.html" title="Feuerklan-Sideadventure" class="page">Feuerklan-Sideadventure</a></li>
+<li><a href="../Fulminantes_Scarlet_Leage_Sideadventure.html" title="Fulminantes Scarlet Leage Sideadventure" class="page">Fulminantes Scarlet Leage Sideadventure</a></li>
+<li><a href="../Lore.html" title="Lore" class="page">Lore</a></li>
+<li><a href="../People.html" title="People" class="page">People</a></li>
+<li><a href="../Places.html" title="Places" class="page">Places</a></li>
+<li><a href="../Quests.html" title="Quests" class="page">Quests</a></li>
+<li><a href="../Sessions.html" title="Sessions" class="page">Sessions</a>
+<ul>
+<li><a href="./001_Feuerklan_flambiert_Flamboyets_Fantastic_Festival.html" title="001 Feuerklan flambiert Flamboyets Fantastic Festival" class="page">001 Feuerklan flambiert Flamboyets Fantastic Festival</a></li>
+<li><a href="./002_Von_verschwundenen_Gehilfen.html" title="002 Von verschwundenen Gehilfen" class="page">002 Von verschwundenen Gehilfen</a></li>
+<li><a href="./003_Abend_in_der_Baerenfalle.html" title="003 Abend in der Baerenfalle" class="page">003 Abend in der Baerenfalle</a></li>
+<li><a href="./004_in_which_our_heroes_win_a_barfight.html" title="004 in which our heroes win a barfight" class="page">004 in which our heroes win a barfight</a></li>
+<li><a href="./005_Nycholas.html" title="005 Nycholas" class="page">005 Nycholas</a></li>
+<li><a href="./006_Abigail_und_Rufus.html" title="006 Abigail und Rufus" class="page">006 Abigail und Rufus</a></li>
+<li><a href="./007_Turm_-_Hoch.html" title="007 Turm - Hoch" class="page">007 Turm - Hoch</a></li>
+<li><a href="./008_Turm_-_Runter_und_durch.html" title="008 Turm - Runter und durch" class="page">008 Turm - Runter und durch</a></li>
+<li><a href="./009_Turm_-_Rauf_und_Rauf.html" title="009 Turm - Rauf und Rauf" class="page">009 Turm - Rauf und Rauf</a></li>
+<li><a href="./010_Turm_-_Rein_und_tot.html" title="010 Turm - Rein und tot" class="page">010 Turm - Rein und tot</a></li>
+<li><a href="./011_Turm_-_Raus.html" title="011 Turm - Raus" class="page">011 Turm - Raus</a></li>
+<li><a href="./012_Liz_auf_Aufriss.html" title="012 Liz auf Aufriss" class="page">012 Liz auf Aufriss</a></li>
+<li><a href="./013_Abwehrmechanismen_von_Rufus,_Take_3.html" title="013 Abwehrmechanismen von Rufus, Take 3" class="page">013 Abwehrmechanismen von Rufus, Take 3</a></li>
+<li><a href="./014_Rufus_und_Tritons.html" title="014 Rufus und Tritons" class="page">014 Rufus und Tritons</a></li>
+<li><a href="./015_Wahrheit_oder_Schnaps.html" title="015 Wahrheit oder Schnaps" class="page">015 Wahrheit oder Schnaps</a></li>
+<li><a href="./016_Night_of_the_Dead_Living.html" title="016 Night of the Dead Living" class="page">016 Night of the Dead Living</a></li>
+<li><a href="./017_Agnes.html" title="017 Agnes" class="page">017 Agnes</a></li>
+<li><a href="./018_Wenn_einer_eine_Reise_tut....html" title="018 Wenn einer eine Reise tut..." class="page">018 Wenn einer eine Reise tut...</a></li>
+<li><a href="./019_Deal_with_the_Devil.html" title="019 Deal with the Devil" class="page">019 Deal with the Devil</a></li>
+<li><a href="./020_Almost_Knockin_on_Soul_Torrents_Door.html" title="020 Almost Knockin on Soul Torrents Door" class="page">020 Almost Knockin on Soul Torrents Door</a></li>
+<li><a href="./021_At_Dawn_we_ride_-_to_Dawnmore_Keep.html" title="021 At Dawn we ride - to Dawnmore Keep" class="page">021 At Dawn we ride - to Dawnmore Keep</a></li>
+<li><a href="./022_Ring_of_Fire.html" title="022 Ring of Fire" class="page">022 Ring of Fire</a></li>
+<li><a href="./023_Dawnmore_Keep.html" title="023 Dawnmore Keep" class="page">023 Dawnmore Keep</a></li>
+<li><a href="./024_Baron_und_Mord_am_Portal.html" title="024 Baron und Mord am Portal" class="page">024 Baron und Mord am Portal</a></li>
+<li><a href="./025_Bernsteinpassage.html" title="025 Bernsteinpassage" class="page">025 Bernsteinpassage</a></li>
+<li><a href="./026_Into_the_Gloomfell.html" title="026 Into the Gloomfell" class="page">026 Into the Gloomfell</a></li>
+<li><a href="./027_Treffen_mit_den_Ilflingen.html" title="027 Treffen mit den Ilflingen" class="page">027 Treffen mit den Ilflingen</a></li>
+<li><a href="./028_Der_silberne_Waechter.html" title="028 Der silberne Waechter" class="page">028 Der silberne Waechter</a></li>
+<li><a href="./029_Tode_im_Silbernen_Waechter.html" title="029 Tode im Silbernen Waechter" class="page">029 Tode im Silbernen Waechter</a></li>
+<li><a href="./030_Mondperle.html" title="030 Mondperle" class="page">030 Mondperle</a></li>
+<li><a href="./031_Into_the_Ruins_of_Shidra.html" title="031 Into the Ruins of Shidra" class="page">031 Into the Ruins of Shidra</a></li>
+<li><a href="./032_Enemy_of_my_Enemy.html" title="032 Enemy of my Enemy" class="page">032 Enemy of my Enemy</a></li>
+<li><a href="./033_Durch_Shidra.html" title="033 Durch Shidra" class="page">033 Durch Shidra</a></li>
+<li><a href="./034_Gegen_Yeeklor.html" title="034 Gegen Yeeklor" class="page">034 Gegen Yeeklor</a></li>
+<li><a href="./035_Nach_Mesa.html" title="035 Nach Mesa" class="page">035 Nach Mesa</a></li>
+<li><a href="./036_A_Triumphant_Return_and_a_Hasty_Departure.html" title="036 A Triumphant Return and a Hasty Departure" class="page">036 A Triumphant Return and a Hasty Departure</a></li>
+<li><a href="./037_vs_Ezshrael_1.html" title="037 vs Ezshrael 1" class="page">037 vs Ezshrael 1</a></li>
+<li><a href="./038_vs_Ezshrael_2.html" title="038 vs Ezshrael 2" class="page">038 vs Ezshrael 2</a></li>
+<li><a href="./039_Erster_Tag_als_Barone_oder_was_kostet_ein_Fest.html" title="039 Erster Tag als Barone oder was kostet ein Fest" class="page">039 Erster Tag als Barone oder was kostet ein Fest</a></li>
+<li><a href="./040_Verhoere_der_Ratsmitglieder.html" title="040 Verhoere der Ratsmitglieder" class="page">040 Verhoere der Ratsmitglieder</a></li>
+<li><b>041 Mondperle tot, Bibliothek</b></li>
+<li><a href="./042_Problems_of_the_Realm.html" title="042 Problems of the Realm" class="page">042 Problems of the Realm</a></li>
+<li><a href="./043_Ilflinge_kommen.html" title="043 Ilflinge kommen" class="page">043 Ilflinge kommen</a></li>
+<li><a href="./044_Banditen_und_Scarlet_League.html" title="044 Banditen und Scarlet League" class="page">044 Banditen und Scarlet League</a></li>
+</ul>
+</li>
+<li><a href="../Timeline.html" title="Timeline" class="page">Timeline</a></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div id="content">
+	<div class='heading'>
+	<h1>041 Mondperle tot, Bibliothek <a name='Sessions:041 Mondperle tot, Bibliothek'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created Freitag 25 November 2022
+</p>
+
+<p>
+<ul>
+<li>Liz zieht sich zurück, braucht etwas Zeit um klar zu kommen</li>
+<li>Positionen, die wir brauchen: 10</li>
+<li>nehmen Aufgaben war, die wir nicht wollen</li>
+<li>sind:
+<ul>
+<li>Population: Regentin</li>
+<li>Loyalität: Hofrat</li>
+<li>Militär: General</li>
+<li>Wirtschaft: Schatzmeister</li>
+<li>Geistlichkeit: Hohepriester</li>
+<li>Diplomatie: Diplomat</li>
+<li>Stabilität: Aufseher</li>
+<li>Magie: Magister</li>
+<li>Kultur: Kurator</li>
+<li>Spionage: Minister</li>
+</ul>
+</li>
+<li>haben stats, base = 10, modifier wie 5e</li>
+<li>Summe der Modifier = monatliche Baronypoints; werden als Resource verbraucht</li>
+<li>Momentan: 1/Monat</li>
+<li>leere Position = -2</li>
+<li>Barony level momentan 2/7: befestigtes Dorf mit Keep
+<ul>
+<li>manche stats level abhängig vom barony level</li>
+</ul>
+</li>
+<li>Zivilbevölkerung = Population * 20 * Barony Level</li>
+<li>Militär eigenständig</li>
+<li>Barony Points = 20</li>
+<li>1000 sp = 1 Barony Point</li>
+<li>Regent = Minister für Population (Chef wenn wir nicht da sind)</li>
+<li>1 der Berater ist Sprachrohr von uns zum Rat = Vorsitzender</li>
+<li>Serena: +3 als Regentin</li>
+<li>Torwald: +4 als Schatzmeister</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>unser Verdienst: 4 sp / Tag (Lifestyle dabei schon abgegolten)</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Serena kommt nochmal</li>
+<li>sie hat große Liste an Anliegen, will am Ende der Woche nochmal mit uns reden</li>
+<li>meint sie wäre gut als Spymaster oder Regent</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Olmi und Kardohr geht zu Beldramus
+<ul>
+<li>gehen durch den Garten</li>
+<li>Enigmapriester kümmern sich um die Pflanzen aus aller Welt</li>
+<li>wir kommen zur Tür, davor Beldramus</li>
+<li>drinnen verzierte Fenster, Marmorboden, Säulengänge</li>
+<li>am Ende ein ründliches Portal mit Gang nach unten, blauer Schimmer von reflektiertem Wasser</li>
+</ul>
+</li>
+<li>sehen uns Glasfenster an
+<ul>
+<li>König Belerant I hat den Orden der Paladine gegründet</li>
+<li>die Bruderschaft schon vorher hier</li>
+<li>verstauen seltene Bücher in Schließfach unter Erde</li>
+<li>Gebilde hat sich weiterentwickelt</li>
+<li>Kapelle ist Akali gewidmet (Eridari der Weisheit)</li>
+<li>es gibt hier magische Heiligkeit, die nur bewahrt werden kann wenn sie vom Zahn der Zeit abgeschirmt wird</li>
+<li>man braucht einen besonderen Grund um in die Bibliothek zu kommen (nicht Wissendurst, Abenteuerlust oder Gier - nur Authentische Verehrung des alten Wissens)</li>
+</ul>
+</li>
+<li>Olmi fragt was er über das Gloomfell weiß
+<ul>
+<li>bleiben gerne unter sich, schaffen keinen Kontakt</li>
+<li>er weiß von Olmi, will unter 4 Augen mit ihm reden - Larondil will gehen</li>
+</ul>
+</li>
+<li>Larondil geht (unsicher ob er hinein dürfte, lieber erstmal über Grund nachdenken)</li>
+<li>Beldramus meint zu Olmi dass Larondil wahrscheinlich zu den Leute gehört, die hinein dürfen</li>
+<li>Beldramus fragt ob Olmi das sterbende Licht verlassen hat
+<ul>
+<li>B weiß viel über die Außenwelt (durch Quellen)</li>
+<li>Baron Bartwin war in dunkle Dinge verstrickt, es gab eine teuflische Auseinandersetzung (war Olmi dabei)</li>
+<li>er weiß vom Dämon auf Mount Shidrah, dass er vertrieben wurde (Olmi meint dafür haben wir gesorgt)</li>
+<li>B: aber für welchen Preis?</li>
+<li>B: wie es scheint wurde das Übel ausgemerzt, aber die Teufel haben das Tor vor den Dämonen kontrolliert; ein Übel gewichen, ein anderes manifestiert; er rät uns davon ab nochmal dahin zu gehen</li>
+<li>er glaubt dass das Licht des Mondes erloschen ist - Olmi meint vor ein paar Tagen noch guter Dinge</li>
+<li>B weiß nicht mit welchen Mächten wir in Bunde traten um die Dämonen zu verbannen, aber irgendwas muss da gewesen sein</li>
+<li>Olmi holt die Hellforged Scimitars heraus - B erschrickt, nicht begeistert</li>
+<li>Olmi: Kardohr würde meinen die Waffen sind gut geschmiedet, aber ist der Umgang mit ihnen sicher?</li>
+<li>B meint er Olmi muss sie ihm übergeben, damit er das untersuchen kann</li>
+<li>B greift die Klinge an, aber seine Finger zucken zurück, eine Eisschicht bildet sich auf der Waffe</li>
+<li>er lässt das Schwert schweben und eine goldene Blase umgibt die Waffe; Lava, Eis, ... versucht der Blase zu entkommen</li>
+<li>die Blase löst sich auf, schwarzer Rauch entkommt </li>
+<li>Waffe des puren Bösen, aber nicht mehr verflucht; es liegt kein Fluch auf dieser Waffe, sie wurden als Geschenk überlassen von jemandem, dessen Bosheit keine Grenzen kennt;</li>
+<li>aber interessant: keine Bedingungen daran geknüpft</li>
+<li>normalerweise nur von Teufeln geführt oder für sehr großen Preis; ob der Preis wohl schon bezahlt wurde?</li>
+<li>B's Guess: vielleicht hängt der Preis damit zusammen, dass Mondperle entschlafen ist</li>
+<li>Olmi entsetzt, hätte sich nie mit der Person eingelassen, wenn er das gewusst hätte</li>
+<li>Olmi meint er muss mit uns darüber reden, wir schulden ihm was</li>
+<li>B meint er würde ihm nicht raten mit uns darüber zu reden</li>
+<li>Olmi fragt was mit Gloomfell passiert</li>
+<li>B meint es gäbe sein eigenes Volk, das daran Gefallen finden könnte, sind schon lange vom Licht des Mondes abgekommen</li>
+<li>Olmi sei wohl ein Abkömmling der alten Droplins, die noch an das Licht geglaubt haben</li>
+<li>wer ihm das wohl gelehrt hätte?</li>
+<li>Olmi nimmt die beiden Scimitars und verspricht dass sie gegen Teufel eingesetzt werden</li>
+<li>Olmi fragt nach den Paladinen, aber B rät davon ab: Rache führt nur zu mehr Hass</li>
+<li>B meint er solle loslassen und Dinge akzeptieren, die er nicht ändern kann</li>
+<li>B meint vielleicht sollte er es seine Aufgabe hier machen denen hier eine Chance zu geben, die nicht mehr unten leben können</li>
+<li>die Waffen besser nicht den Paladinen zeigen</li>
+</ul>
+</li>
+<li>B meint er würde gerne die Halbelfe mit der zerbrochenen Geige sehen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Kardohr geht zur Schmiede
+<ul>
+<li>Veklani, female halfelf, massiv gebaut, groß</li>
+<li>Schmiede überschaubar</li>
+<li>Kardohr sieht die Schmiedekunst: ist ok...</li>
+<li>sie erkennt K als Priester des Tiomyn, will dass er ihr die Ehre erweist mit ihrem Hammer zuzuschlagen und damit die Schmiede segnet</li>
+<li>er lehrt sie, meint sie muss nur sich arbeiten</li>
+<li>fragt K ob Tiomyn auch Gefallen an ihr findet wenn sie keine makellosen Werke abliefert - er meint das wird momentan diskutiert, die Herangehensweise ist wohl wichtig, immer das Beste geben</li>
+<li>sie ist noch nicht lange Schmiedin, erst seitdem ihr Vater gestorben ist und sie ihre Schwestern durchfüttern muss</li>
+<li>K meint die Schmiede braucht wohl etwas Unterstützung der FGRC und etwas formelle Bildung</li>
+<li>er bietet ihr an immer mal wieder vorbeizuschauen und ihr ein paar Tricks zu zeigen - sie ist geehrt</li>
+<li>sie würde sich freuen wenn er dafür mit ihnen essen würde </li>
+<li>K meint er habe 12 Geschwister, vielleicht will jemand von ihnen helfen; aus Greyspear (Greiwa Thur)</li>
+<li>sie kennt die Faber Nostra</li>
+<li>K zeigt ihr sein Tattoo - sie erkennt es, fragt ihn ob er Prinz sei - er redet nicht gerne darüber, gibt ja auch noch andere Familien</li>
+<li>es gibt immer gewisse Spannungen zwischen den Familien</li>
+<li>K will die Schmiede als Tempel Tiomyns größer machen - sie meint sie ist dabei, macht alles</li>
+<li>K erkennt dass sie so 18-19 Jahre alt ist, Geschwister hat, Schmiede ist recht alt - hat wohl Talent, weil sie ohne viel Einweisung und Zeit doch halbwegs ordentliche Arbeit macht</li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Kardohr schreib seiner Schwester Fidohra Brief
+<ul>
+<li>lange nichts gehört</li>
+<li>hoffe dein Schmieden preist Tiomyn</li>
+<li>zufällig in leitende Position gekommen, sie bezeichnen mich als "Baron"</li>
+<li>könnte Hilfe brauchen</li>
+<li>besitzen Garnison Paladine (200), führen das göttliche Werk von Innoen aus, aber Schmied verstorben und Tochter hat übernommen - kann Hilfe brauchen</li>
+<li>denk dran, guter Trading Outpost für die Familie</li>
+<li>dein "Roh"</li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Olmi spielt sein Wormhorn traurig im Kämmerchen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>bei einem Abendessen am 15. erzählt Olmi von den Neuigkeiten mit Mondperle</li>
+<li>wir eilen zu Beldramus
+<ul>
+<li>Keep ist offen, niemand drin</li>
+<li>Kathedrale ist dunkel</li>
+<li>nur bläuliches Licht am Ende des Raumes</li>
+<li>Beldramus kommt von außen, mit irgendeinem Räucherding in der Hand</li>
+<li>er geht zum schimmernden Portal, stellt die Laterne ab - es haut die Türen zum Keep zu</li>
+<li>er dreht sich um, bläulicher, magischer Schimmer in den Augen</li>
+<li>er fängt an zu chanten, in Sprache die wir nicht verstehen</li>
+<li>er fängt an zu levitieren, Kerzen gehen an, bläulicher Schimmer</li>
+<li>er schwebt zur Eingangstür, landet, Kerzen werden normal, Augen werden normal</li>
+</ul>
+</li>
+<li>er meint er wusste dass wir kommen</li>
+<li>Larondil fragt ob Mondperle wirklich tot ist</li>
+<li>Kardohr fragt was das Ritual war
+<ul>
+<li>B meint nicht so viel fragen, nimmt eine Schatulle, taucht Finger ein und berührt Kardohr auf der Stirn</li>
+<li>zieht schwarzen Strich über Gesicht</li>
+<li>dann Larondil und Olmi</li>
+</ul>
+</li>
+<li>aus Richtung des Heiligtums schießt Wasser heraus, die Kathedrale füllt sich</li>
+<li>er meint wir sollen ihm vertrauen</li>
+<li>uns bleibt die Luft weg, merken dann aber dass wir atmen können</li>
+<li>wir treiben im Wasser</li>
+<li>die Kerzen sind wieder blau</li>
+<li>Beldramus hat auch schwarzen Strich</li>
+<li>die Showeinlage tut ihm Leid, aber wir sind in abnormalen Zyklus angekommen; normal niemand hier erlaubt</li>
+<li>normalerweise ist es ein anderes Ritual</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir fragen nochmal ob Mondperle wirklich tot sei
+<ul>
+<li>es ist wahr</li>
+<li>er weiß so einiges was von statten geht</li>
+<li>sie hatte eine Krankheit - wir meinen ja, deshalb ja Demon getötet</li>
+<li>er meint wir hätten Symptom bekämpft aber wohl dem wahren Tumor den Weg geöffnet</li>
+<li>er glaubt an unsere Intentionen</li>
+<li>B meint wir hätten nach bestem Wissen gehandelt, wurden getäuscht</li>
+<li>diejenige, die uns in die Situation gebracht hat, ist nicht hier; er will noch mit ihr reden</li>
+<li>Larondil fragt ob man Portal schließen kann - ja klar, in die Hölle selbst gehen, ehemalige Verbündeten den Garaus machen</li>
+<li>B meint es gibt einige RIsse in die Hölle</li>
+<li>es gäbe Abmachung zwischen Sathar und den Teufeln:
+<ul>
+<li>Sathar will dass Seelen unter seinen Kontrolle den Strudel durchqueren</li>
+<li>Teufel wollen den Strudel anzapfen</li>
+<li>Sathar hat das verhindert</li>
+<li>Abmachung: nur Seelen, die Strudel und ihrer 2. Chance nicht gerecht werden, kommen in die Hölle</li>
+<li>es gibt Ausnahme wenn Seele schon zuvor Kontakt hergestellt hat</li>
+<li>es gibt einige Risse, wo die Hölle direkten Durchgriff auf Exordia hatte; nicht nur Hölle, auch Chaos</li>
+<li>einer der Risse dort unten</li>
+<li>viele Jahre geglaubt dass versiegt</li>
+<li>danach geglaubt dass chaotische Energie heißt dass ursprüngliche Herren Kontrolle verloren haben</li>
+<li>wir hätten beigetragen dass alte Gewohnheit wieder hergestellt wurde</li>
+<li>muss nicht heiße dass das Portal in die Hölle ein alles-verschlingender Strudel ist; ist mehr Option, ein leichterer Weg für die Mächte des Bösen</li>
+<li>wer auch immer mit uns im Bunde war wird jetzt da unten herrschen</li>
+<li>wir erzählen was wir wissen (Namen usw.)</li>
+<li>er meint viele Erzteufel stehen unter Zariel</li>
+<li>wir fragen ob es Hoffnung für die Ilflinge gibt, jetzt wo Mondperle tot ist
+<ul>
+<li>das Licht ist versiegt; würde praktisch göttliche Macht brauchen es zu </li>
+<li>Hoffnung ist nicht dort wo es jetzt ist, denn Tunnel wo sie fliehen könnten sind von fanatischen Droplins besetzt (wahrscheinlich sind deren Anführer mit dunklen Mächten im Sinn)</li>
+<li>er will uns nicht sagen was wir tun sollen, aber besser keinen Krieg heraufbeschwören; denn ein Aufmarsch ihrer Macht wäre schlecht</li>
+<li>die Mondilflinge sind von dem Licht abhängig; wenn es das Licht nicht mehr gibt müssen sie wohin</li>
+<li>er meint wir unterschätzen die Ilflinge, sie haben sicher Vorkehrungen getroffen</li>
+<li>er glaubt Vilkas sei auf dem Weg hierher</li>
+<li>sie werden sich von der Sonne verbergen, in der Nacht fortschreiten</li>
+<li>er hatte Kontakt mit Ilflingen, ist vor kurzem abgerissen; er hatte Kontakt mit Mondperle bis zu ihrem Tod</li>
+<li>Mondperle hat nicht uns die Schuld gegeben, sondern hat gemeint sie stünde in unserer Schuld</li>
+</ul>
+</li>
+<li>wir fragen B ob Loraine Manor Untergrund habe
+<ul>
+<li>war einst wunderschön, hohe Türme</li>
+<li>gibt dort Keller</li>
+<li>aber dort sind Banditen...</li>
+</ul></li>
+</ul>
+</li>
+<li>wir fragen ihn ob es aus seinem Orden Kandidaten für den Magister gibt - nope, sind den Eridari verschworen - aber er hat 1-2 Kandidaten</li>
+</ul>
+</li>
+<li>er meint jetzt wo der Raum schon geflutet ist...</li>
+<li>wir sind jetzt (und nur genau jetzt) bemächtigt einzutreten</li>
+<li>wir können mitkommen, wenn wir wollen</li>
+<li>wir tauchen den Gang am Ende der Kapelle hinunter
+<ul>
+<li>tauchen durch eine Art Loch in der Decke</li>
+<li>bemalt (wie Sixtinische Kapelle)</li>
+<li>versunkene Bibliothek, Regal über Regal voller Bücher</li>
+<li>alles angefüllt mit Flüssigkeit, anders als Wasser (sehr wässriger Pudding)</li>
+<li>2-3 andere Priester tauchen herum</li>
+<li>sehr oldschool</li>
+<li>geflutetet, unterirdische Kapelle, zu Bibliothek umfunktioniert</li>
+<li>Gänge führen weg, größer als das Keep es ahnen lässt</li>
+<li>magische Laternen</li>
+<li>Pulte zum Lesen</li>
+<li>die Bücher werden bewacht, einzeln ausgebaut</li>
+</ul></li>
+</ul>
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</div> <!-- /wrapper -->
+</body>
+</html>
